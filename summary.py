@@ -69,7 +69,7 @@ class Summary:
         summary = ""
         #change the value have more fun!
         for sentence in sentences:
-            if sentence in sentence_score.keys() and sentence_score[sentence] > 1.25 * average_score:
+            if sentence in sentence_score.keys() and sentence_score[sentence] > 1.45 * average_score:
                 summary += "<br>* "+sentence+"<br>"
     
         return (summary)
