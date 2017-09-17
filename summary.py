@@ -2,7 +2,8 @@
 # Not a very advanced script. This is my first summarizing algorithm.
 class Summary:
     def run(self,text):
-       
+        import nltk
+        nltk.download('punkt')  
         from nltk.corpus import stopwords
         from nltk.tokenize import word_tokenize, sent_tokenize
         from nltk.stem import PorterStemmer
