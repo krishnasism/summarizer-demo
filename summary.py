@@ -2,14 +2,12 @@
 # Not a very advanced script. This is my first summarizing algorithm.
 class Summary:
     def run(self,text):
+        import nltk
+        nltk.download()
         from nltk.corpus import stopwords
         from nltk.tokenize import word_tokenize, sent_tokenize
         from nltk.stem import PorterStemmer
-        import nltk
-        nltk.download()
-
-
-
+        
         #text = input("Enter some text : ")
 
         words = word_tokenize(text)
