@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <title>Summarizer</title>
+ 
+ 
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 
+</head>
+ 
+<body>
+ 
+    
+ 
+        <div class="jumbotron" align="center">
+        <h1>Summary</h1>
+           
+      
+    </div>
+    <div class = "container">
+    <p id="summary">
+           </p>
+           <br><br>
+<a href="/" class="btn btn-danger" role="button">Back</a>
+
+    </div>
+
+</body>
+     
+       <script>var summary = JSON.parse('{{summary | tojson}}');
+          	document.getElementById("summary").innerHTML = summary;
+           </script>
+</html>

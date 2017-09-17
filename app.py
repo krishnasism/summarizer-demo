@@ -12,7 +12,7 @@ def summarize():
     summ = Summary()
     _text = request.form['paragraph']
     summary = summ.run(_text)
-    return (summary)
+    return render_template('summary.html', summary = summary)
 
 if __name__ == "__main__":
     app.run()
